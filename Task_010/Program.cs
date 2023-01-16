@@ -1,12 +1,10 @@
 ﻿Console.WriteLine("Введите трехзначное число");
 int a = int.Parse(Console.ReadLine()?? "0");
-if (a < 100)
+while(a > 1000 || a <= 99)
 {
-    Console.WriteLine("Третьего числа нет");
+    Console.WriteLine("Введено некорректное число");
+    a = int.Parse(Console.ReadLine()?? "0");
 }
-else if (a >= 100 && a < 1000)
-{
-    int b = a % 10;
-    Console.WriteLine("Третье число равно");
-    Console.WriteLine(b);
-}
+int b = a % 10;
+Console.WriteLine("Третье число равно");
+Console.WriteLine(b);
