@@ -3,7 +3,7 @@ int a = int.Parse(Console.ReadLine()?? "0");
 while (a < 0 || a > 4)
 {
     Console.WriteLine("Некорректный ввод");
-    a = int.Parse(Console.ReadLine());
+    a = int.Parse(Console.ReadLine()?? "0");
 }
 if (a == 1)
 {
